@@ -42,7 +42,7 @@ def main():
                 break
             else:
                 print("Result: ",containers["Box-%s"%selected])
-                print("YOU HAVE %s TRIES LEFT!"%(str(50 - player[i]['opened'])))
+                print("YOU HAVE %s TRIES LEFT!"%(str((self.players/2) - player[i]['opened'])))
                 print("Nums Tried: %s"%l)
                 l+=[containers["Box-%s"%selected]]
                 player[i]['opened'] += 1
